@@ -4,6 +4,7 @@ using LeaveManagementWeb.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeaveManagementWeb.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220411214109_AddedDefaultUsersAndRoles")]
+    partial class AddedDefaultUsersAndRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -106,41 +108,37 @@ namespace LeaveManagementWeb.Data.Migrations
                         {
                             Id = "aedd2960-fefc-45d3-9bdb-650c04b2d9d2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8c2b65b6-2790-4d30-a841-369bb709c16a",
+                            ConcurrencyStamp = "9ec79c0c-061e-41b2-9827-ddace6c13b41",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "cagdas.arda@live.com",
-                            EmailConfirmed = true,
+                            EmailConfirmed = false,
                             FirstName = "System",
                             LastName = "Admin",
                             LockoutEnabled = false,
                             NormalizedEmail = "CAGDAS.ARDA@LIVE.COM",
-                            NormalizedUserName = "CAGDAS.ARDA@LIVE.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPndmNwLrT1vT0iZFBIuaDLmaqZwzZnjeFZLm2S3e1OSnZP/Yeu+z9X712R6ReLmlg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAECkJfI6Cz3uGnG9ua752wQ5nyjanCwzaJQB8FNovwR9gaa9XbkGNd5ooBEM69bG+HQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "07536e90-9816-48c1-a1cd-b2840dba49f9",
-                            TwoFactorEnabled = false,
-                            UserName = "cagdas.arda@live.com"
+                            SecurityStamp = "fbd5fecc-1135-4a5e-8106-ab9cc8e9f14d",
+                            TwoFactorEnabled = false
                         },
                         new
                         {
                             Id = "aedd2960-fefc-45d3-8bdb-650c04b2d9d2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4ba98bba-3669-4938-9493-dff481f82624",
+                            ConcurrencyStamp = "1ef3c082-7415-4f08-89b8-fbf360f61a14",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "cagdas.arda1@live.com",
-                            EmailConfirmed = true,
+                            EmailConfirmed = false,
                             FirstName = "User",
                             LastName = "Admin",
                             LockoutEnabled = false,
                             NormalizedEmail = "CAGDAS.ARDA1@LIVE.COM",
-                            NormalizedUserName = "CAGDAS.ARDA1@LIVE.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGN+TFvCQPIpL/Esf0AKJIB4qrlIE3sgpyNChkajKiLPJ0eqEJaX3j8uC8Br/GI0DA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMwVVxFjhTqW3Rwhi+iBt7vmum1uSsq2iXd3hYGzsaarAIEOb3m4CdkB2gnOxBg6Ww==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "5f3047a4-c48d-4306-95ce-bc18502d5a6e",
-                            TwoFactorEnabled = false,
-                            UserName = "cagdas.arda1@live.com"
+                            SecurityStamp = "faee7b84-180e-4fed-8da9-2a46d3dbcbda",
+                            TwoFactorEnabled = false
                         });
                 });
 
@@ -231,14 +229,14 @@ namespace LeaveManagementWeb.Data.Migrations
                         new
                         {
                             Id = "aedd2960-fefc-33d3-9bdb-650c04b2d9d2",
-                            ConcurrencyStamp = "d5ea3c35-a0a3-4926-86af-6d830015828a",
+                            ConcurrencyStamp = "bb4701f3-b42c-43a6-bac1-dcc81a27878d",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
                             Id = "aedd3360-fefc-ccd3-9bdb-650c04b2d9d2",
-                            ConcurrencyStamp = "22d39ab6-b9ad-4f42-8fe2-7a5b62318880",
+                            ConcurrencyStamp = "9d6153dd-2938-4543-9ef4-52bbd5572d84",
                             Name = "User",
                             NormalizedName = "USER"
                         });
